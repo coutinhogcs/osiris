@@ -11,7 +11,7 @@ export function Footer() {
         <div className="row mb-4">
           <div className="col-lg-6 col-xs-12">
             <h4 className="mb-3">Heading</h4>
-            <p>AAAA
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
               ante mollis quam tristique convallis
             </p>

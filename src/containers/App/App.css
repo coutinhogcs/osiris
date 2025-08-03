@@ -1,65 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
 body {
-  padding-top: 56px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffeecb;
 }
 
 .left-aligned {
   margin-left: auto;
+  font-size: 20px;
 }
 
 .bg-dark {
   background-color: #343a40 !important;
 }
 
-.bg-hero {
-  background-color: #45b06cff;
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  height: 60px;
 }
 
-/* CALLOUT */
-.bd-callout {
-  padding: 1.25rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  border: 1px solid #e9ecef;
-  border-left-width: 0.25rem;
-  border-radius: 0.25rem;
+.secao{
+  margin-top: 60px;
+  position: block;
+  display: inline-block;
 }
 
-.bd-callout h4 {
-  margin-bottom: 0.25rem;
+
+.everything {
+  padding: 10px;
+  margin-top: 10px;
+  font-family: 'Urbanist', sans-serif;
 }
 
-.bd-callout p:last-child {
-  margin-bottom: 0;
+.line {
+  background-color: #EBAC45;
+  height: 100px;
 }
 
-.bd-callout code {
-  border-radius: 0.25rem;
+.div-bg {
+  background-color: #587e5a;
 }
 
-.bd-callout + .bd-callout {
-  margin-top: -0.25rem;
-}
-
-.bd-callout-info {
-  border-left-color: #5bc0de;
-}
-
-.bd-callout-warning {
-  border-left-color: #f0ad4e;
-}
-
-.bd-callout-danger {
-  border-left-color: #d9534f;
-}
-
-/* footer */
-footer a {
+.textStyle {
+  font-family: 'Urbanist';
+  margin-left: 700px;
+  padding-right: 30px;
+  padding-top: 50px;
+  text-align: end;
+  font-size: 45px;
+  font-weight: 200;
   color: white;
-  font-weight: bold;
-  text-decoration: none;
 }
 
-footer a:hover {
+/* Primeiro Corpo do Home */
+.join {
+  display: flex;
+  padding: 100px 20px 0 0;
+}
+
+.textStyle2 {
+  margin-top: 50px;
+  font-weight: 200;
   color: white;
-  text-decoration: underline;
+  padding-left: 25px;
+  margin-right: 450px;
+  font-size: 40px;
+}
+
+.join2 {
+  position: relative;
+  display: inline-block;
+}
+
+.gif-background {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.texto-sobreposto {
+  position: absolute;
+  top: 23%;
+  left: 30%;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+
+}
+.text-secao{
+  position: absolute;
+  top: 65%;
+  left: 14%;
+  font-family: 'Urbanist';
+  color: #587e5a;
+}
+.mosquito{
+  position: absolute;
+  top: 73.4%;
+  left: 8%;
+}
+
+.texto-brasil {
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.brasil-texto {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  margin: 0.5rem 0;
+}
+
+.texto-dinamico {
+  color: white;
+  position: absolute;
+  top: 36%;
+  left: 58%;
+  text-align: end;
+  font-size: 70px;
+  font-weight: 200;
+  text-shadow: 1px 1px 3px black;
+}
+
+.home-img{
+   max-width: 99.08vw;
 }

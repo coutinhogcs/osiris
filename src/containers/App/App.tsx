@@ -37,8 +37,8 @@ const App = () => {
               path={path}
               element={
                 <>
-                  <Header title={title || ""} lead={lead || ""} />
-                  <div className="container">
+                  <Header />
+                  <div >
                     <Component />
                   </div>
                 </>
@@ -50,10 +50,7 @@ const App = () => {
           path="*"
           element={
             <>
-              <Header
-                title="Not Found"
-                lead="The requested URL was not found on this server."
-              />
+              <Header/>
               <NotFound />
             </>
           }
