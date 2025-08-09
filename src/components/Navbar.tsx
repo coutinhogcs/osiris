@@ -43,7 +43,7 @@ export function Navbar() {
     <BootstrapNavbar expand="lg" className="bg-body-tertiary" fixed="top">
       <Container>
         <BootstrapNavbar.Brand>
-          <img src="public/images/logocompleta.svg" alt="Logo OSIRIS" />
+          <img src="src/public/images/logocompleta.svg" alt="Logo OSIRIS" width={140}/>
         </BootstrapNavbar.Brand>
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BootstrapNavbar.Collapse id="basic-navbar-nav">
