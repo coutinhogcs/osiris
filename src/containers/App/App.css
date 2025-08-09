@@ -9,6 +9,35 @@ body {
   background-color: #ffeecb;
 }
 
+.home-section {
+  background-image: url('src/public/images/home.png');
+  background-color: #ffeecb;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300vw;
+  height: 100vh;
+  display: flex;
+
+}
+
+.mosquito {
+  width: 80vw;
+  height: auto;
+  position: absolute;
+  top: 47.5%;
+  left: 18%;
+}
+
+.text-secao {
+  position: absolute;
+  top: 65%;
+  left: 14%;
+  font-family: 'Urbanist';
+  color: #587e5a;
+}
+
+
 .left-aligned {
   margin-left: auto;
   font-size: 20px;
@@ -26,7 +55,7 @@ body {
   height: 60px;
 }
 
-.secao{
+.secao {
   margin-top: 60px;
   position: block;
   display: inline-block;
@@ -39,13 +68,15 @@ body {
   font-family: 'Urbanist', sans-serif;
 }
 
+
 .line {
-  background-color: #EBAC45;
-  height: 100px;
+  background-color: rgba(180, 160, 47, 0.596);
+  height: 10vh;
 }
 
 .div-bg {
   background-color: #587e5a;
+  padding: 20px;
 }
 
 .textStyle {
@@ -94,18 +125,7 @@ body {
   text-shadow: 1px 1px 3px black;
 
 }
-.text-secao{
-  position: absolute;
-  top: 65%;
-  left: 14%;
-  font-family: 'Urbanist';
-  color: #587e5a;
-}
-.mosquito{
-  position: absolute;
-  top: 73.4%;
-  left: 8%;
-}
+
 
 .texto-brasil {
   font-size: 35px;
@@ -128,8 +148,4 @@ body {
   font-size: 70px;
   font-weight: 200;
   text-shadow: 1px 1px 3px black;
-}
-
-.home-img{
-   max-width: 99.08vw;
 }
