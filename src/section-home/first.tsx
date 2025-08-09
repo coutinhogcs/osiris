@@ -1,9 +1,15 @@
-export default function First(){
-    return(
-        <div className="secao">
-            <h1 className="text-secao">Synthetic Biology <br/>for Precision Diagnostics</h1>
-            <img src='public/images/home.png' alt="Imagem principal" className="home-img" />
-            <img src="public/images/mosquito.png" alt="Mosquito"className="mosquito" />
-        </div>
-    )
+import { Container } from "react-bootstrap";
+
+export default function First() {
+    return (
+        <Container fluid className="p-0 position-relative home-section">
+            <h1 className="text-secao">Synthetic Biology <br />for Precision Diagnostics</h1>
+            <img
+                src="src/public/images/mosquito.png"
+                alt="Mosquito"
+                className="mosquito img-fluid"
+                style={{ maxWidth: '100%', height: 'auto' }}
+            />
+        </Container>
+    )
 }

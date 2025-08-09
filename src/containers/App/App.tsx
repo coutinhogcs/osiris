@@ -31,7 +31,7 @@ const App = () => {
       {/* Header and PageContent */}
       <Routes>
         {Object.entries(pathMapping).map(
-          ([path, { title, lead, component: Component }]) => (
+          ([path, { component: Component }]) => (
             <Route
               key={path}
               path={path}
