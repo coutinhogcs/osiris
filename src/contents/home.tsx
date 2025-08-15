@@ -6,8 +6,10 @@ export function Home() {
 
   return (
     <>
-      <First />
-      <Second/>
+      <section>
+        <First />
+        <Second />
+      </section>
     </>
   );
 }

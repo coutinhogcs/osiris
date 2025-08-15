@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+:root {
+  --primary-color: #ffeecb;
+  --secondary-color: #EBAC45;
+  --third-color: #587e5a;
+  --text-color: #343a40;
+  --first-family: 'Urbanist', sans-serif;
+  --second-family: 'Anton SC', sans-serif;
+}
+
 
 html,
 body {
@@ -6,12 +17,13 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffeecb;
+  background-color: var(--primary-color);
 }
+
 
 .home-section {
   background-image: url('src/public/images/home.png');
-  background-color: #ffeecb;
+  background-color: var(--primary-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,6 +31,12 @@ body {
   height: 100vh;
   display: flex;
 
+}
+
+.logo {
+  min-width: 5vw;
+  width: 8vw;
+  height: 8vw;
 }
 
 .mosquito {
@@ -33,26 +51,30 @@ body {
   position: absolute;
   top: 65%;
   left: 14%;
-  font-family: 'Urbanist';
+  font-family: var(--first-family);
   color: #587e5a;
 }
 
 
 .left-aligned {
   margin-left: auto;
+  padding-right: 2vh;
   font-size: 20px;
+  font-family: 'Urbanist', sans-serif;
 }
 
-.bg-dark {
-  background-color: #343a40 !important;
-}
 
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0) !important;
   height: 60px;
+  backdrop-filter: blur(10px);
+
+}
+
+.nav-white .nav-link,
+.nav-white .dropdown-item {
+  color: #fff !important;
 }
 
 .secao {
@@ -65,9 +87,9 @@ body {
 .everything {
   padding: 10px;
   margin-top: 10px;
-  font-family: 'Urbanist', sans-serif;
-}
+  font-family: var(--first-family);
 
+}
 
 .line {
   background-color: rgba(180, 160, 47, 0.596);
@@ -81,7 +103,8 @@ body {
 
 .textStyle {
   font-family: 'Urbanist';
-  margin-left: 700px;
+  margin-top: 90px;
+  padding-left: 1000px;
   padding-right: 30px;
   padding-top: 50px;
   text-align: end;
@@ -97,10 +120,12 @@ body {
 }
 
 .textStyle2 {
+  font-family: 'urbanist';
   margin-top: 50px;
   font-weight: 200;
   color: white;
   padding-left: 25px;
+  padding-right: 500px;
   margin-right: 450px;
   font-size: 40px;
 }
@@ -119,13 +144,12 @@ body {
 
 .texto-sobreposto {
   position: absolute;
-  top: 23%;
+  top: 20%;
   left: 30%;
   color: white;
   text-shadow: 1px 1px 3px black;
 
 }
-
 
 .texto-brasil {
   font-size: 35px;
@@ -142,10 +166,118 @@ body {
 .texto-dinamico {
   color: white;
   position: absolute;
-  top: 36%;
-  left: 58%;
+  top: 28%;
+  left: 65%;
   text-align: end;
   font-size: 70px;
   font-weight: 200;
   text-shadow: 1px 1px 3px black;
+}
+
+.textStyle3 {
+  font-family: var(--second-family);
+  font-size: 100px;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 3px black;
+  text-align: start;
+}
+
+.among-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px; /* Espaço entre os blocos */
+  margin-top: 20px;
+}
+
+.among-left, .among-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.among-left h2 {
+  font-family: var(--first-family);
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.among-left h3 {
+  font-family: var(--first-family);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.among-right h3 {
+  font-family: var(--first-family);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin: 0;
+  padding-bottom: 5px;
+}
+.among-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin: 0.5rem 0;
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);  
+  text-decoration-thickness: 10px;
+  text-underline-offset: 5px;
+
+}
+
+.vertical-pipe {
+  width: 6px;
+  height: 200px;
+  background-color:#DFB558;
+  border-radius: 3px;
+  margin: 0 30px;
+}
+
+
+.textStyle4{
+  font-family: var(--first-family);
+  font-size: 40px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-left: 500px;
+  padding-right: 500px;  
+}
+
+.terceiro-gif {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+
+.moleculas{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; 
+} 
+
+.molecula3, .molecula2{
+  width: 40vw;
+  height: auto;
+}
+
+.molecula1{
+  width: 40vw;
+  height: auto;
+
+  padding-left: 15%;
 }

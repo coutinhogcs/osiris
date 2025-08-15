@@ -40,16 +40,14 @@ export function Navbar() {
   });
 
   return (
-    <BootstrapNavbar expand="lg" className="bg-body-tertiary" fixed="top">
-      <Container>
+    <BootstrapNavbar expand="lg" className="navbar" fixed="top">
         <BootstrapNavbar.Brand>
-          <img src="src/public/images/logocompleta.svg" alt="Logo OSIRIS" width={140}/>
         </BootstrapNavbar.Brand>
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BootstrapNavbar.Collapse id="basic-navbar-nav">
-          <Nav className="left-aligned">{pages}</Nav>
+          <img src="src/public/images/logocompleta.svg" alt="Logo OSIRIS" className="logo"/>
+          <Nav className="left-aligned nav-white">{pages}</Nav>
         </BootstrapNavbar.Collapse>
-      </Container>
     </BootstrapNavbar>
   );
 }
